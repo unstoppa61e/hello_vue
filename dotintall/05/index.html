@@ -1,0 +1,26 @@
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Vue App</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<div id="app" class="container">
+		<h1>My Todos</h1>
+		<ul>
+			<li v-for="todo in todos">{{ todo }}</li>
+		</ul>
+		<!-- <form v-on:submit="addItem"> -->
+		<!-- <form @submit="addItem"> -->
+		<form @submit.prevent="addItem">
+			<input type="text" v-model="newItem">
+			<input type="submit" value="Add">
+		</form>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My first Vue app for 42</title>
+  <title>My first Vue app</title>
   <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
   <div id="app">
-    {{ message }}
+	  <p><input type="text" v-model="message"></p>
+	  <p>{{ message }}</p>
   </div>
 
   <script>
     var app = new Vue({
       el: '#app',
       data: {
-        message: 'Hello 42!'
+        message: 'Hello Vue!'
       }
     })
   </script>

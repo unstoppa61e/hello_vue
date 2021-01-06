@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My first Vue app for 42</title>
+  <title>My first Vue app</title>
   <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-  <div id="app">
+  <!-- <div id="app" v-if="seen"> -->
+  <div id="app" v-show="seen">
     {{ message }}
   </div>
 
@@ -13,7 +14,8 @@
     var app = new Vue({
       el: '#app',
       data: {
-        message: 'Hello 42!'
+		message: 'Hello Vue!',
+		seen: true
       }
     })
   </script>
