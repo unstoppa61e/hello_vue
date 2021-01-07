@@ -9,7 +9,7 @@
 
 - UI に結びつくモデルは、よく Vue Model と呼ばれるため、vm のような変数名の時が多い。
 
-### Excersice 00: Hello 42!
+### Exercise 00: Hello 42!
 
 ```jsx
 const app = new Vue({
@@ -32,7 +32,7 @@ const app = new Vue({
 
 - 紐付けたい `data` 中のキーを、 `{{ }}` で囲う。`{{}}` の中には、JavaScript の式をそのまま書ける。
 
-### Excersice 01: Hello binding
+### Exercise 01: Hello binding
 
 ```html
 <!-- <div id="app" v-if="seen"> -->
@@ -59,7 +59,7 @@ data: {
 }
 ```
 
-### Excersice 02: Button
+### Exercise 02: Button
 
 ```html
 <!-- <form v-on:click="hideMessage"> -->
@@ -89,7 +89,7 @@ methods: {
 - `this` によって、 `data` にアクセスできる。
 - `methods` 内ではアロー関数を使うことは、 `this` の挙動を変えてしまうため、公式からは奨励されていない。
 
-### Excersice 03: User input
+### Exercise 03: User input
 
 ```html
 <div id="app">
@@ -106,7 +106,7 @@ data: {
 
 - `v-model` を使用することで、このフォームに入力された値が、data 側と結びつくようになる。
 
-### Excersice 04: Components
+### Exercise 04: Components
 
 部品を再利用するための仕組み。
 
@@ -145,7 +145,7 @@ Vue.component("hello", {
 というように、 `Vue.component` でいきなり定義する方法も存在する。
 こちらの方が簡潔に書けるのだが、カスタムコンポーネントの利点である「他ファイルへの切り出し」ができなくなってしまうため、避けた方が無難。
 
-### Excersice 05: Props
+### Exercise 05: Props
 
 コンポーネントにて、大体の機能は同じのまま、少しだけ内容を変えたいという場合に使用する。
 
