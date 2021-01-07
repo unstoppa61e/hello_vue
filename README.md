@@ -11,7 +11,7 @@
 
 ### Exercise 00: Hello 42!
 
-```jsx
+```jsx:JavaScript
 const app = new Vue({
   el: '#app',
   data: {
