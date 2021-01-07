@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My first Vue app</title>
-  <script src="https://unpkg.com/vue"></script>
-</head>
-<body>
-  <div id="app">
-    {{ message }}
-  </div>
+  <head>
+    <title>My first Vue app</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <hello></hello>
+    </div>
 
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        message: 'Hello Vue!'
-      }
-    })
-  </script>
-</body>
+    <script>
+      // Vue.component("hello", {
+      //   template: "<h1>Hello Vue!</h1>"
+      // });
+      const hello = Vue.extend({
+        template: "<h1>Hello Vue!</h1>"
+      });
+      var app = new Vue({
+        el: "#app",
+        components: {
+          hello: hello
+        }
+      });
+    </script>
+  </body>
 </html>
