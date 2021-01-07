@@ -9,6 +9,7 @@
       <form @click="showMessage">
         <input type="button" value="SHOW" />
       </form>
+      <!-- <form v-on:click="hideMessage"> -->
       <form @click="hideMessage">
         <input type="button" value="HIDE" />
       </form>
@@ -17,7 +18,7 @@
     </div>
 
     <script>
-      var app = new Vue({
+      const app = new Vue({
         el: "#app",
         data: {
           message: "Hello Vue!",

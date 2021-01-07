@@ -6,7 +6,8 @@
 </head>
 <body>
   <div id="app">
-	  <series-item v-for='program in NetflixList' v-bind:series='program'></series-item>
+	  <!-- <series-item v-for='program in NetflixList' v-bind:series='program'></series-item> -->
+	  <series-item v-for='program in NetflixList' :series='program'></series-item>
   </div>
 
   <script>

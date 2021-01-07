@@ -10,16 +10,16 @@
     </div>
 
     <script>
-      // Vue.component("hello", {
-      //   template: "<h1>Hello Vue!</h1>"
-      // });
-      const hello = Vue.extend({
+    //   Vue.component("hello", {
+    //     template: "<h1>Hello Vue!</h1>"
+    //   });
+      const sayHello = Vue.extend({
         template: "<h1>Hello Vue!</h1>"
       });
-      var app = new Vue({
+      const app = new Vue({
         el: "#app",
         components: {
-          hello: hello
+          hello: sayHello
         }
       });
     </script>
