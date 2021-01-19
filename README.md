@@ -9,7 +9,7 @@
 
 - UI に結びつくモデルは、よく Vue Model と呼ばれるため、vm のような変数名の時が多い。
 
-## :white_check_mark:Exercise 00: Hello 42!
+## :white_check_mark:[Exercise 00: Hello 42!](https://github.com/monoue/hello_vue/blob/master/ex00/index.html)
 > JavaScript
 ```jsx
 const app = new Vue({
@@ -33,7 +33,7 @@ const app = new Vue({
 
 - 紐付けたい `data` 中のキーを、 `{{ }}` で囲う。`{{}}` の中には、JavaScript の式をそのまま書ける。
 
-## :white_check_mark:Exercise 01: Hello binding
+## :white_check_mark:[Exercise 01: Hello binding](https://github.com/monoue/hello_vue/blob/master/ex01/index.html)
 > HTML
 ```html
 <!-- <div id="app" v-if="seen"> -->
@@ -62,7 +62,7 @@ data: {
 ※Safari と IE では、display プロパティを適用できないため、v-show は使えない。
 
 
-## :white_check_mark:Exercise 02: Button
+## :white_check_mark:[Exercise 02: Button](https://github.com/monoue/hello_vue/blob/master/ex02/index.html)
 
 > HTML
 ```html
@@ -94,7 +94,7 @@ methods: {
 - `this` によって、 `data` にアクセスできる。
 - `methods` 内ではアロー関数を使うことは、 `this` の挙動を変えてしまうため、公式からは奨励されていない。
 
-## :white_check_mark:Exercise 03: User input
+## :white_check_mark:[Exercise 03: User input](https://github.com/monoue/hello_vue/blob/master/ex03/index.html)
 > HTML
 ```html
 <div id="app">
@@ -111,7 +111,7 @@ data: {
 
 - `v-model` を使用することで、このフォームに入力された値が、data 側と結びつくようになる。
 
-## :white_check_mark:Exercise 04: Components
+## :white_check_mark:[Exercise 04: Components](https://github.com/monoue/hello_vue/blob/master/ex04/index.html)
 
 部品を再利用するための仕組み。
 > HTML
@@ -151,7 +151,7 @@ Vue.component("hello", {
 というように、 `Vue.component` でいきなり定義する方法も存在する。
 こちらの方が簡潔に書けるのだが、カスタムコンポーネントの利点である「他ファイルへの切り出し」ができなくなってしまうため、避けた方が無難。
 
-## :white_check_mark:Exercise 05: Props
+## :white_check_mark:[Exercise 05: Props](https://github.com/monoue/hello_vue/blob/master/ex05/index.html)
 
 コンポーネントにて、大体の機能は同じのまま、少しだけ内容を変えたいという場合に使用する。
 
