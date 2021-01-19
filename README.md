@@ -188,7 +188,7 @@ const app = new Vue({
 - `v-bind` により、引き取った program を series というカスタム属性名にて、コンポーネント内で受け取れるようにしている。
 - `v-bind:` は `:` で代用可能。
 
-### :bulb:TIPS
+## :bulb:OTHER TIPS
 
 - `v-for` は `v-if` より先に実行されるので、同じところに書くとエラーの原因。
 - ブラウザをリロードしても元に戻らないようにするには、LocalStorage を使用できる。
