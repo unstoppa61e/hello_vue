@@ -1,4 +1,4 @@
-# hello_vue
+# :wave:hello_vue
 
 42 Tokyo プロジェクト
 
@@ -9,7 +9,7 @@
 
 - UI に結びつくモデルは、よく Vue Model と呼ばれるため、vm のような変数名の時が多い。
 
-### Exercise 00: Hello 42!
+### :white_check_mark:Exercise 00: Hello 42!
 > JavaScript
 ```jsx
 const app = new Vue({
@@ -33,7 +33,7 @@ const app = new Vue({
 
 - 紐付けたい `data` 中のキーを、 `{{ }}` で囲う。`{{}}` の中には、JavaScript の式をそのまま書ける。
 
-### Exercise 01: Hello binding
+### :white_check_mark:Exercise 01: Hello binding
 > HTML
 ```html
 <!-- <div id="app" v-if="seen"> -->
@@ -62,7 +62,7 @@ data: {
 ※Safari と IE では、display プロパティを適用できないため、v-show は使えない。
 
 
-### Exercise 02: Button
+### :white_check_mark:Exercise 02: Button
 
 > HTML
 ```html
@@ -94,7 +94,7 @@ methods: {
 - `this` によって、 `data` にアクセスできる。
 - `methods` 内ではアロー関数を使うことは、 `this` の挙動を変えてしまうため、公式からは奨励されていない。
 
-### Exercise 03: User input
+### :white_check_mark:Exercise 03: User input
 > HTML
 ```html
 <div id="app">
@@ -111,7 +111,7 @@ data: {
 
 - `v-model` を使用することで、このフォームに入力された値が、data 側と結びつくようになる。
 
-### Exercise 04: Components
+### :white_check_mark:Exercise 04: Components
 
 部品を再利用するための仕組み。
 > HTML
@@ -151,7 +151,7 @@ Vue.component("hello", {
 というように、 `Vue.component` でいきなり定義する方法も存在する。
 こちらの方が簡潔に書けるのだが、カスタムコンポーネントの利点である「他ファイルへの切り出し」ができなくなってしまうため、避けた方が無難。
 
-### Exercise 05: Props
+### :white_check_mark:Exercise 05: Props
 
 コンポーネントにて、大体の機能は同じのまま、少しだけ内容を変えたいという場合に使用する。
 
